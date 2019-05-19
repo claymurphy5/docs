@@ -107,19 +107,33 @@ from the
 `master` branch. Older versions are available in GitHub on the `rX.x` release
 branches.
 
-### Simple changes
+### Fork the tensorflow/docs repo
+
+On the
+<a href="https://github.com/tensorflow/docs" class="external">tensorflow/docs</a>
+GitHub page, click the *Fork* button
+<svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+to create your own repo copy under your GitHub account. Once forked, you're
+responsible for keeping your repo copy up-to-date with the upstream TensorFlow
+repo. See [Add an upstream repo to keep up-to-date](#add_an_upstream_repo_to_keep_up-to-date_optional).
+
+### Make simple changes via web browser
 
 The easiest way to make straightforward documentation updates and fixes is to
 use GitHub's
 <a href="https://help.github.com/en/articles/editing-files-in-your-repository" class="external">web-based file editor</a>.
 Browse the [tensorflow/docs](https://github.com/tensorflow/docs/tree/master/site/en)
 repository to find the Markdown or notebook file that roughly corresponds to the
-<a href="https://www.tensorflow.org">tensorflow.org</a> URL structure. In the
-upper right corner of the file view, click the pencil icon
+<a href="https://www.tensorflow.org">tensorflow.org</a> URL structure. Remember to
+launch your edits from your forked version of the docs with your GitHub username
+replacing *tensorflow* in the central site's URL, like so:
+https://github.com/usersname/docs/edit/master/site/en/community/contribute/docs.md
+
+In the upper right corner of the file view, click the pencil icon
 <svg version="1.1" width="14" height="16" viewBox="0 0 14 16" class="octicon octicon-pencil" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"></path></svg>
 to open the file editor. Edit the file and then submit a new pull request.
 
-### Set up a local Git repo
+### Set up a local Git repo for complex updates
 
 For multi-file edits or more complex updates, it's better to use a local Git
 workflow to create a pull request.
@@ -133,16 +147,6 @@ your GitHub account and get started.
 
 The following Git steps are only required the first time you set up a local
 project.
-
-#### Fork the tensorflow/docs repo
-
-On the
-<a href="https://github.com/tensorflow/docs" class="external">tensorflow/docs</a>
-GitHub page, click the *Fork* button
-<svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
-to create your own repo copy under your GitHub account. Once forked, you're
-responsible for keeping your repo copy up-to-date with the upstream TensorFlow
-repo.
 
 #### Clone your repo
 
@@ -260,6 +264,9 @@ the notebook located in GitHub here:
 <a href="https&#58;//github.com/tensorflow/docs/blob/master/site/en/tutorials/keras/basic_classification.ipynb">https&#58;//github.com/tensorflow/docs/blob/master/site/en/tutorials/keras/basic_classification.ipynb</a><br/>
 can be loaded into Google Colab at this URL:
 <a href="https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/keras/basic_classification.ipynb">https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/keras/basic_classification.ipynb</a>
+
+As with GitHub, you will need to [fork the tensorflow/docs](#fork_the_tensorflowdocs_repo)
+and load your username-specific docs URL to commit changes.
 
 There is an
 <a href="https://chrome.google.com/webstore/detail/open-in-colab/iogfkhleblhcpcekbiedikdehleodpjo" class="external">Open in Colab</a>
